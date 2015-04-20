@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="250dp"
+                android:layout_height="300dp">
+        <ImageView
+                android:id="@+id/tester"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:scaleType="fitCenter"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/status_1"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="kB/s"
+                android:textStyle="normal"
+                android:textSize="20sp"
+                android:textColor="#aaaaaa"
+                android:paddingTop="170dp"
+                android:gravity="center"
+                android:typeface="monospace"/>
+        <TextView
+                android:id="@+id/speedmeter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textStyle="normal"
+                android:textSize="70sp"
+                android:typeface="monospace"
+                android:textColor="#0066FF"
+                android:layout_centerVertical="true"
+                android:paddingTop="-10dp"
+                android:gravity="center"/>
+
+        <TextView
+                android:id="@+id/avespeed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="平均 0kB/s"
+                android:textStyle="normal"
+                android:textSize="20sp"
+                android:typeface="monospace"
+                android:textColor="#0066FF"
+                android:paddingTop="200dp"
+                android:layout_centerVertical="true"
+                android:gravity="center"/>
+</RelativeLayout>

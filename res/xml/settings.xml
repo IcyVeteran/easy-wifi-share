@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:key="using_categories_in_root_screen"
+                  android:summary="Using Preference Categories"
+                  android:background="#e0f7fa"
+                  android:title="设置" >
+
+    <PreferenceCategory
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:key="wifi_set"
+            android:summary="Preferences related to setting"
+            android:title=" " >
+        <SwitchPreference
+                android:key="quit_setting"
+                android:title="退出时提醒" />
+        <SwitchPreference
+                android:key="update_check_setting"
+                android:title="启动时检查升级" />
+        <SwitchPreference
+                android:key="default_setting"
+                android:title="设为默认wifi工具" />
+        <SwitchPreference
+                android:key="notification_setting"
+                android:title="显示状态栏图标信息"
+                />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
